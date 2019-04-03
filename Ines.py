@@ -1,9 +1,10 @@
 import sys
  
+ 
 class Human:
     def __init__(self, first_name, last_name):
         self.first_name = first_name
-        self.second_name = last_name
+        self.last_name = last_name
  
  
 class Teacher(Human):
@@ -20,18 +21,17 @@ class DreamTeacher(Teacher):
         self.charm = charm
  
     def __str__(self):
-        return f"Thank you for..."
-        # TODO
+        return f"Thank you for everything {self.first_name}!"
  
  
-student = 'alive'
-while student:
+while True:
  
-    my_teacher = DreamTeacher('Ines', 'Ivanova', sys.maxsize, sys.maxsize, sys.maxsize, sys.maxsize )
+    my_teacher = DreamTeacher('Ines', 'Ivanova', sys.maxsize, sys.maxsize, sys.maxsize, sys.maxsize)
  
     try:
         print(my_teacher)
     except:
         print(f"Stop kidding me. There is no way to raise exception in this case!")
  
-    next_lesson = input()
+    next_lesson = eval(input())
+    # TODO!
