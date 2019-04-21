@@ -1,3 +1,8 @@
+"""
+A complimentary piece of Python code,
+meant to be printed on a standard A4 piece of paper
+as a gift to our teacher at SoftUni.
+"""
 from sys import maxsize
  
  
